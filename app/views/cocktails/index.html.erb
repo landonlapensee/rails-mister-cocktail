@@ -1,7 +1,7 @@
 <h1>Index</h1>
 <ol>
 <% @cocktails.each do |cocktail| %>
-<%= cocktail.name %>
+<li></label><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
 <% end %>
 </ol>
 

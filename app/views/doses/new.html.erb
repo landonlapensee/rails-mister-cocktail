@@ -1,0 +1,9 @@
+<h1>New Dose</h1>
+
+<div class="p-100 wd-25">
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient, error_html: { id: 'you already have this ingredient'} %>
+  <%= f.submit %>
+<% end %>
+</div>
